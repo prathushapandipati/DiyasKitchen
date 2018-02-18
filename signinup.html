@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diya's Kitchen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {
+      font-size: 16px;
+  }
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+ .navbar-brand{
+   font-size: 30px;
+  }
+  
+ button[type=submit] {
+    background-color: #474e5d;;
+    color: white;;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  button[type=submit]:hover {
+    background-color: #2f2f2f;
+}
+.container {
+    border-radius: 5px;
+    background-color: #474e5d;
+    padding: 20px;
+}
+        #cen
+        {
+            width: 220px;
+            height: 100px;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+			
+        }
+
+        form 
+        {
+            margin:0 auto;
+            width:300px
+			
+        }
+        input 
+        {
+            margin-bottom:3px;
+            padding:10px;
+            width: 100%;
+            border:1px solid #CCC
+        }
+        label 
+        {
+            cursor:pointer
+        }
+        #form-switch 
+        {
+            display:none
+        }
+        #register-form 
+        {
+            display:none
+        }
+		#register-form span b
+		{
+		color: #474e5d;
+		}
+		#login-form span b
+		{
+		color: #474e5d;
+		}
+        #form-switch:checked~#register-form 
+        {
+            display:block
+        }
+        #form-switch:checked~#login-form 
+        {
+            display:none
+        }
+  </style>
+  
+<script src="jquery-3.2.1.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Join/Login</a>
+    </div>
+   </div>
+</nav>
+
+
+<div class="container-fluid bg-1 text-center">
+<input type='checkbox' id='form-switch'>
+
+<form id='register-form' action="http://programminginitiative.com/gradient/new_account.php" method='post'>
+  
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your Email.."><br>
+	
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+	  
+  <button type='submit'>Register</button>
+  <label for='form-switch'><span>Already Member ? <b>Sign In!</b></span></label>
+</form>
+
+
+
+<form id='login-form' action="http://programminginitiative.com/gradient/login.php" method='post'>
+
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <button type="submit">Login</button><br>
+	  
+	  <span class="psw">Forgot <a href="#"><b>password?</b></a></span><br>
+	  
+      <label for='form-switch'><span>Not a member? <b>Register here</b></span></label>  
+</form>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#cen').hide().fadeIn(1000);
+    });
+</script>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>This page was created by <a href="https://se.linkedin.com/in/prathusha-pandipati">Prathusha Pandipati</a></p> 
+</footer>
+
+
+
+</body>
+</html>
+
+

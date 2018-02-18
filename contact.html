@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diya's Kitchen/Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {
+      font-size: 16px;
+  }
+  
+  .margin {
+      margin-bottom: 45px;
+      color: #474e5d;
+  }
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 100px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  .navbar-brand{
+   font-size: 30px;
+  }
+  
+  input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+   
+}
+
+input[type=submit] {
+    background-color: #474e5d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  input[type=submit]:hover {
+    background-color: #2f2f2f;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #474e5d; /* Dark Blue */
+    padding: 20px;
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b>Contact form<b></a>
+    </div>
+  </div>
+ </nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Write your message here</h3>      
+  <form action="/action_page.php">
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email" placeholder="Your Email.."><br>
+    
+    <label for="phonenumber">Phone Number</label><br>
+    <input type="text" id="phonenumber" name="phonenumber" placeholder="Your Phone Number.."><br>
+    
+    <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <h3>Thank you</h3>
+
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>This page was created by <a href="https://se.linkedin.com/in/prathusha-pandipati">Prathusha Pandipati</a></p> 
+</footer>
+
+</body>
+</html>
+
+
