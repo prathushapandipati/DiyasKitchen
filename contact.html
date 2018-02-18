@@ -26,6 +26,9 @@
       background-color: #1abc9c; /* Green */
       color: #ffffff;
   }
+  .bg-1 input, textarea{
+      color: #474e5d;
+  }
   .bg-4 { 
       background-color: #2f2f2f; /* Black Gray */
       color: #fff;
@@ -50,6 +53,15 @@
    font-size: 30px;
   }
   
+  .container {
+    border-radius: 5px;
+    background-color: #474e5d; /* Dark Blue */
+    padding: 20px;
+}
+.simple-form{	
+	display:input;
+	}
+	
   input[type=text], select, textarea {
     width: 50%;
     padding: 12px;
@@ -73,11 +85,7 @@ input[type=submit] {
     background-color: #2f2f2f;
 }
 
-.container {
-    border-radius: 5px;
-    background-color: #474e5d; /* Dark Blue */
-    padding: 20px;
-}
+
   </style>
 </head>
 <body>
@@ -94,7 +102,7 @@ input[type=submit] {
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Write your message here</h3>      
-  <form action="/action_page.php">
+ <form action ="http://wilder.azurewebsites.net/echo" method ="POST" class = "simple-form">
     <label for="fname">First Name</label><br>
     <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
 

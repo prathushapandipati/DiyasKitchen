@@ -21,14 +21,10 @@
       background-color: #1abc9c; /* Green */
       color: #ffffff;
   }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
+  .bg-1 input{
+      color: #474e5d;
   }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
+  
   .bg-4 { 
       background-color: #2f2f2f; /* Black Gray */
       color: #fff;
@@ -88,13 +84,15 @@
             width:300px
 			
         }
-        input 
-        {
-            margin-bottom:3px;
-            padding:10px;
+       input[type=text], input[type=password] {
             width: 100%;
-            border:1px solid #CCC
-        }
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
         label 
         {
             cursor:pointer
@@ -142,7 +140,7 @@
 <div class="container-fluid bg-1 text-center">
 <input type='checkbox' id='form-switch'>
 
-<form id='register-form' action="http://programminginitiative.com/gradient/new_account.php" method='post'>
+<form id='register-form' action="http://wilder.azurewebsites.net/echo" method='post'>
   
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
@@ -162,7 +160,7 @@
 
 
 
-<form id='login-form' action="http://programminginitiative.com/gradient/login.php" method='post'>
+<form id='login-form' action="http://wilder.azurewebsites.net/echo" method='post'>
 
       <label><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required><br>
